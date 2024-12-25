@@ -102,7 +102,6 @@
             border: 9px solid #fff;
         }
 
-
         @keyframes gradientAnimation {
             0% {
                 background-position: 0% 50%;
@@ -198,6 +197,28 @@
         }
 
         /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .card-inner {
+                width: 400px;
+                height: 560px;
+            }
+
+            .card-front h1 {
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            .image-container {
+                width: 120px;
+                height: 120px;
+                margin-top: 250px;
+            }
+
+            .message {
+                font-size: 12px;
+            }
+        }
+
         @media (max-width: 600px) {
             .card-inner {
                 width: 300px;
@@ -206,10 +227,21 @@
 
             .card-front h1 {
                 font-size: 24px;
+                line-height: 40px;
             }
 
             .message {
-                font-size: 16px;
+                font-size: 8px;
+            }
+
+            .signature {
+                font-size: 18px;
+            }
+
+            .image-container {
+                width: 100px;
+                height: 100px;
+                margin-top: 200px;
             }
         }
 
